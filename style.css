@@ -1,0 +1,36 @@
+
+
+/* ==============VARIABLE============== */
+:root {
+    --header-height: 3.5rem;
+
+    /* =========COLORS============= */
+    /* COLOR MODE HSL(HUE, SATUATION, LIGHTNESS) */
+    --first-color: hsl(207, 65%, 65%);
+    --title-color: hsl(207, 4%, 16%);
+    --text-color: hsl(207, 4%, 28%);
+    --body-color: hsl(207, 4%, 99%);
+    --container-color: hsl(207, 4%, 95%);
+
+    /* change the first number */
+    /* blue: 207 - purple: 250 - pink: 356 - teal: 174 */
+    --gadient-color: linear-gradient(180deg,
+                    hsla(207, 48%, 72%, 0),
+                    hsla(207, 65%, 65%, 1));
+
+    /* =======font and typography ===========*/
+            /* 5rem = 8px / 1rem = 16px .. */
+    --body-font:
+
+
+
+
+
+
+
+
+
+
+
+
+}
