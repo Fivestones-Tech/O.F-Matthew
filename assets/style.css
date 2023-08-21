@@ -38,19 +38,50 @@
     --font-semi-bold: 600;
 
     /* ============= z index ================= */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    --z-nomal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
 }
+
+
+/* ===========Responsive typograhy============= */
+@media screen and (min-width: 1024px) {
+    :root {
+        --biggest-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --normal-font-size: 875rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: 813rem;
+        --tiny-font-size: .688rem;
+    }
+}
+
+/* =================BASE==================== */
+
+
+/* ==================THEME=================== */
+
+
+
+/* =================VARIABLES DARK THEME============ */
+
+
+
+/*===============
+    COLOR CHANGES IN SOME PARTS OF
+    THE WEBSITE, IN LIGHT THEME
+================*/
+
+
+
+
+/* ====================RESUABLE CSS CLASSES=========== */
+
+
+
+
+/* ================HEADER & NAV ================ */
+
+
+
