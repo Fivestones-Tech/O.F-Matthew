@@ -329,6 +329,20 @@ img {
     row-gap: 2rem;
 }
 
+.home__info-title {
+    font-family: var(--body-font);
+    font-size: var(--small-font-size);
+    font-weight: 400;
+    color: var(--text-color-light);
+    margin-bottom: 1rem;
+}
+
+.home__info-description,
+.home__info-number {
+    font-family: var(--title-font);
+    color: var(--title-color);
+}
+
         /* =======================SKILLS=============== */
 
 
