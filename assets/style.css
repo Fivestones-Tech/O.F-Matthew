@@ -244,8 +244,18 @@ img {
 
 
     /* ================HOME===================== */
+.home__container {
+    row-gap: 1.5rem;
+    padding-top: 2rem;
+}
 
+.home__data {
+    row-gap: 1.5rem;
+}
 
+.home__title {
+    /* text-align: center; */
+}
         /* =======================SKILLS=============== */
 
 
