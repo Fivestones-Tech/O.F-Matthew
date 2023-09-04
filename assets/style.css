@@ -488,6 +488,22 @@ img {
  }
 
   /* =======================SERVICES=============== */
+.services__container {
+    row-gap: 2.5rem;
+    justify-content: center;
+}
+
+.services__card {
+    position: fixed;
+    width: 228px;
+    height: 322px;
+    background-color: var(--container-color);
+    text-align: center;
+    padding: 3.5rem 1rem;
+    border-radius: 7.25rem;
+}
+
+    /* =======================PROJECTS=============== */
 
 
 
