@@ -568,15 +568,26 @@ img {
     margin: .5rem 0 1.25rem;
 }
 
-.project__button {
-    
+.projects__button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    color: var(--title-color);
+    font-size: var(--small-font-size);
 }
 
+.projects__button i {
+    font-size: 1rem;
+    transition: transform .3s;
+}
 
+.projects__button:hover i{
+    transform: translateX(.25rem);
+}
 
+        /* =======swiper.js======== */
 
-
-  
+        
 
  /* =======================TESTIMONIAL=============== */
 
