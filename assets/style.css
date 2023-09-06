@@ -488,20 +488,21 @@ img {
  }
 
   /* =======================SERVICES=============== */
+  
 .services__container {
     row-gap: 2.5rem;
     justify-content: center;
 }
 
 .services__card {
-    position: fixed;
+    position: relative;
     width: 228px;
     height: 322px;
     background-color: var(--container-color);
     text-align: center;
     padding: 3.5rem 1rem;
     border-radius: 7.25rem;
-}
+} 
 
 .services__card i {
     display: block;
@@ -517,7 +518,7 @@ img {
     margin-bottom: 1.5rem;
 }
 
-.section__border {
+.services__border {
     width: 248px;
     height: 342px;
     border: 1.8px solid var(--text-color-light);
@@ -535,7 +536,7 @@ img {
     transform: rotateY(360deg);
 }
 
-.services__card:hover .second__border {
+.services__card:hover .services__border {
     opacity: 1;
 }
 
