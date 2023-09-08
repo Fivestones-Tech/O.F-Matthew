@@ -615,8 +615,25 @@
 
                 <div class="contact__content">
                     <h3 class="contact__title">
-                        
+                        <i class="ri-send-plane-line"></i> Write me your project
                     </h3>
+
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__form-div-tag">
+                            <label class="contact__form-tag">Names</label>
+                            <input type="text" name="user_name" placeholder="Write your names" required class="contact__form-input" id="contact-name">
+                        </div>
+
+                        <div class="contact__form-div-tag">
+                            <label class="contact__form-tag">Mail</label>
+                            <input type="email" name="user_email" placeholder="Write your emails" required class="contact__form-input" id="contact-eamil">
+                        </div>
+
+                        <div class="contact__form-div-tag" contact__form-area>
+                            <label class="contact__form-tag">Projects</label>
+                            <textarea name="message" id="contact-project" class="contact__form-input"></textarea>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
