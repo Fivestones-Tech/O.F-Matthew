@@ -61,7 +61,47 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
     },
 });
 
-// ===============EMAIL JS=====================
+
+// ==========EMAIL JS ===============
+const contactForm = querySelectorById('contact-form'),
+    contactName = document.getElementById('contact-name')
+    contactEmail = document.getElementById('contact-email')
+    contactProject = document.getElementById('contact-project')
+    contactMessage = document.getElementById('contact-message')
+    
+
+const sendEmail = (e) => {
+    e.preventDefault()
+
+    // check if the field has a value
+    if(contactName.value === '' || contactEmail.value === '' || contactProject.value === ''){
+        // add and remove color
+        contactMessage.classList.remove('color-blue')
+        contactMessage.classList.add('color-red')
+
+        // show message
+        contactMessage.textContent = 'Write all the input fields '
+
+    }
+
+}
+contactForm.addEventListener('submit', sendEmail)
+// ==========SCROLL SECTIONS ACTIVE ACTIVE LINK ===============
+
+ 
+
+// ==================SHOW SCROLL UP================
+
+
+// =============DARK LIGHT THEME=================
+
+
+// ==================CHANGE BACKGROUND HEADER================
+
+// ================ SCROLL REVEAL ANIMATION ========================
+
+
+
 
 
 

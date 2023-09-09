@@ -18,3 +18,39 @@ i will be changing the theme of the portfolio
 
 
 i will be converting it to react.js later on
+
+
+I will be adding where my CV can be downloaded on the home page and the nav_link.
+
+Changing the color to my brand color.
+
+i will be creating a blog post section by opening another html file and many more.
+
+I will be adding whatsapp chat to the portfolio.
+
+I will be changing the project section to where you can click on the particular project that you would like to view.
+
+
+I will be adding images to the client section to showcase the amount of client that i ahve worked with and people that i have collaborayed with.
+
+I will be including a chat section where you can chat with an A.I in the potfolio or if you need a help you can drop it and it will be save in the portfolio.
+
+I hope to include a section where you can learn and read documentation and learn about my jorney and the other service i offe to people which part of it is to train and mentor tech enthusiast.
+
+I will be including counter to the number section using javascript.
+
+I will also use typesript for for highlight the kind of services that i render.
+
+Part of my documentation will also be about.
+
+Vscode extention that you need to have.
+
+How to use git
+
+Talking about html and css 
+
+Animation
+
+Teaching about js libaries and so on
+
+you can also build a personal blog post website 
