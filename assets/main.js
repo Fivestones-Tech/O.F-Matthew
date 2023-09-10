@@ -62,30 +62,61 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 });
 
 
-// ==========EMAIL JS ===============
-const contactForm = querySelectorById('contact-form'),
-    contactName = document.getElementById('contact-name')
-    contactEmail = document.getElementById('contact-email')
-    contactProject = document.getElementById('contact-project')
-    contactMessage = document.getElementById('contact-message')
+// ==========EMAIL JS =============== 
+const contactForm = document.getElementById('contact-form');
+const contactName = document.getElementById('contact-name');
+const contactEmail = document.getElementById('contact-email');
+const contactProject = document.getElementById('contact-project');
+const contactMessage = document.getElementById('contact-message');
     
 
 const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     // check if the field has a value
-    if(contactName.value === '' || contactEmail.value === '' || contactProject.value === ''){
+    if(contactName.value === '' || contactEmail.value === '' || contactProject.value === '') {
         // add and remove color
-        contactMessage.classList.remove('color-blue')
-        contactMessage.classList.add('color-red')
+        contactMessage.classList.remove('color-blue');
+        contactMessage.classList.add('color-red');
 
         // show message
-        contactMessage.textContent = 'Write all the input fields '
-
+        contactMessage.textContent = 'Write all the input fields'
     }
 
-}
-contactForm.addEventListener('submit', sendEmail)
+};
+
+contactForm.addEventListener('submit', sendEmail);
+
+// const contactForm = document.getElementById('contact-form');
+// const contactName = document.getElementById('contact-name');
+// const contactEmail = document.getElementById('contact-email');
+// const contactProject = document.getElementById('contact-project');
+// const contactMessage = document.getElementById('contact-message');
+
+// const sendEmail = (e) => {
+//     e.preventDefault();
+
+//     // check if the fields have a value
+//     if (contactName.value === '' || contactEmail.value === '' || contactProject.value === '') {
+//         // add and remove color
+//         contactMessage.classList.remove('color-blue');
+//         contactMessage.classList.add('color-red');
+
+//         // show message
+//         contactMessage.textContent = 'Please fill in all the input fields. ⚠️';
+//     }
+// };
+
+// contactForm.addEventListener('submit', sendEmail);
+
+
+
+
+
+
+
+
+
 // ==========SCROLL SECTIONS ACTIVE ACTIVE LINK ===============
 
  
