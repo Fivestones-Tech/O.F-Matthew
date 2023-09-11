@@ -362,7 +362,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 5rem;
+    column-gap: .5rem;
     font-size: var(--small-font-size);
     font-weight: var(--font-semi-bold);
     margin-bottom: 2.5rem;

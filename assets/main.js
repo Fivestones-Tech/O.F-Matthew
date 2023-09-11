@@ -22,27 +22,15 @@ if(navClose) {
 
 
 // ================REMOVE MENU MOBILE=============
-// const navLink = document.querySelectorAll('.nav__link')
-
-// const linkAction = () => {
-//     // const navMenu = document.getElementById('nav-menu')
-//     const navMenu = document.getElementById('#nav-menu')
-//     // when we click on each nav link we remove the show-menu 
-//     navMenu.classList.remove('show-menu')
-// }
-// navLink.forEach(n => n.addEventListener('click', linkAction))
-const navLink = document.querySelectorAll('.nav__link');
+const navLink = document.querySelectorAll('.nav__Link')
 
 const linkAction = () => {
-    const navMenu = document.querySelector('#nav--menu'); // Updated to match the ID
+    // const navMenu = document.getElementById('nav-menu')
+    const navMenu = document.getElementById('nav--menu')
     // when we click on each nav link we remove the show-menu 
-
-    navMenu.classList.remove('show-menu');
-};
-
-navLink.forEach(n => n.addEventListener('click', linkAction));
-
-
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 
@@ -97,6 +85,26 @@ const sendEmail = (e) => {
 
         // show message
         contactMessage.textContent = 'Please fill in all the input fields. ⚠️'
+    }else{
+        // serviceID - template - #form - publickey
+        emailjs.sendForm('service_nqf13y9','template_gl7d22a','#contact-form','_E1clLC49o-k7JCMg')
+            .then(() =>{
+                // show message and add color
+                contactMessage.classList.add('color-blue')
+                contactMessage.textContent = 'Message sent ✅'
+
+                // Remove message after five seconds
+                setTimeout(() =>{
+                    contactMessage.textContent = ''
+                }, 5000)
+            }, (error) => {
+                alert('OOPS! SOMETHING HAS FAILED. . .', error)
+            })
+
+            // To clear the input field 
+            contactName.value = ''
+            contactEmail.value = ''
+            contactProject.value = ''
     }
 
 };
