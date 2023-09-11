@@ -68,7 +68,8 @@
 html {
     scroll-behavior: smooth;
 }
-/* ==================THEME=================== */
+
+
 body{    
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -95,9 +96,29 @@ img {
     height: auto;
 }
 
+
+
+/* ==================THEME=================== */
+.nav__buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.change-theme {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+    transition: color .3s;
+}
+
 /* =================VARIABLES DARK THEME============ */
-
-
+.body.dark-theme {
+    --title-color: hsl(207, 4%, 95%);
+    --text-color: hsl(207, 4%, 65%);
+    --body-color: hsl(207, 4%, 10%);
+    --container-color: hsl(207, 4%, 12%);
+}
 
 /*===============
     COLOR CHANGES IN SOME PARTS OF
@@ -180,6 +201,13 @@ img {
     font-weight: var(--font-medium);
 }
 
+/* additional style  */
+
+span {
+    color: var(--first-color)
+}
+
+
 .nav__toggle {
     display: flex;
     font-size: 1.25rem;
@@ -240,7 +268,9 @@ img {
 }
 
         /* active link    */
-
+.active-link {
+    color: var(--title-color);
+}
 
 
     /* ================HOME===================== */
@@ -902,12 +932,38 @@ img {
 
 
 /* ====================SCROLL UP=================== */
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -30%;
+    background-color: var(--body-color);
+    box-shadow: 0 4px hsl(207, 25%, 35, 15%);
+    display: inline-flex;
+    padding: .35rem;
+    border-radius: .25rem;
+    font-size: 1.1rem;
+    color: var(--title-color);
+    z-index: var(--z-tooltip);
+    transition: bottom .3s, transform .3s;
+}
 
-
-
+.scrollup {
+    transform: translateY(-.25rem);
+}
 /* SHOW SCROLL UP */
+.show-scroll {
+    bottom: 7.5rem;
+}
+
+/* ===================BREAKPOINTS ============ */
+
+/* === for small size==== */
 
 
+/* === for medium size==== */
+
+
+/* === for large size==== */
 
 /* =========BREAKPOINT=================== */
 

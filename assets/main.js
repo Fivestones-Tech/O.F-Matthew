@@ -1,5 +1,5 @@
 // ================SHOW MENU===============
-const navMenu = document.getElementById('nav--menu')
+const navMenu = document.getElementById('nav-menu')
     navToggle = document.getElementById('nav-toggle')
     navClose = document.getElementById('nav-close')
 
@@ -26,11 +26,21 @@ const navLink = document.querySelectorAll('.nav__Link')
 
 const linkAction = () => {
     // const navMenu = document.getElementById('nav-menu')
-    const navMenu = document.getElementById('nav--menu')
+    const navMenu = document.getElementById('nav-menu')
     // when we click on each nav link we remove the show-menu 
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+// This is for typed script js
+const typed = new Typed('.multiple-text',{
+    strings: ['Software Engineer','Frontend Developer','Code Tutor','YouTuber','Web/U.I Designer','Your Tech Coach & Mentor','Content Creator','Multi-Entrepreneur'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop:true
+ });
 
 
 
@@ -114,14 +124,47 @@ contactForm.addEventListener('submit', sendEmail);
 
 
 // ==========SCROLL SECTIONS ACTIVE ACTIVE LINK ===============
+const sections = document.querySelectorAll('section[id]')
 
+const scrollActive = () =>{
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = curent.offsetHeight,
+              sectionTop = current.offsetTop - 58,
+              sectionId = current.getAttribute('id'),
+              sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            sectionsClass.classList.add('active-link')
+        }else{
+            sectionClass.classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
  
 
 // ==================SHOW SCROLL UP================
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up')
+    // when the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup 
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                        : scrollUp.classList.remove('show-scroll')
+}   
+window.addEventListener('scroll', scrollUp)
 
 
 // =============DARK LIGHT THEME=================
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'bx-sun'
 
+// previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('slected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// we obtain the current theme the interface has by validating the dark-theme classs
 
 // ==================CHANGE BACKGROUND HEADER================
 
