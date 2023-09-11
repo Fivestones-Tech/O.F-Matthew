@@ -54,3 +54,6 @@ Animation
 Teaching about js libaries and so on
 
 you can also build a personal blog post website 
+
+
+Arrow pointing to my RESUME
