@@ -33,6 +33,12 @@ const linkAction = () => {
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
+
+
+
+
+
+
 // This is for typed script js
 const typed = new Typed('.multiple-text',{
     strings: ['Software Engineer','Frontend Developer','Code Tutor','YouTuber','Web/U.I Designer','Your Tech Coach & Mentor','Content Creator','Multi-Entrepreneur'],
@@ -41,6 +47,11 @@ const typed = new Typed('.multiple-text',{
     backDelay: 1000,
     loop:true
  });
+
+
+
+
+
 
 
 
@@ -65,6 +76,10 @@ let swiperProjects = new Swiper(".projects__container", {
 });
 
 
+
+
+
+
 // ====================SWIPER TESTIMONIAL ===============
 let swiperTestimonial = new Swiper(".testimonial__container", {
     grabCursor: true,
@@ -74,6 +89,11 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
       prevEl: ".swiper-button-prev",
     },
 });
+
+
+
+
+
 
 
 // ==========EMAIL JS =============== 
@@ -123,6 +143,10 @@ contactForm.addEventListener('submit', sendEmail);
 
 
 
+
+
+
+
 // ==========SCROLL SECTIONS ACTIVE ACTIVE LINK ===============
 const sections = document.querySelectorAll('section[id]')
 
@@ -143,6 +167,11 @@ const scrollActive = () =>{
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+
+
+
+
  
 
 // ==================SHOW SCROLL UP================
@@ -155,16 +184,75 @@ const scrollUp = () => {
 window.addEventListener('scroll', scrollUp)
 
 
+
+
+
+
 // =============DARK LIGHT THEME=================
-const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dark-theme'
-const iconTheme = 'bx-sun'
+// const themeButton = document.getElementById('theme-button')
+// const darkTheme = 'dark-theme'
+// const iconTheme = 'ri-sun-line'
 
-// previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('slected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
+// // previously selected topic (if user selected)
+// const selectedTheme = localStorage.getItem('selected-theme')
+// const selectedIcon = localStorage.getItem('selected-icon')
 
-// we obtain the current theme the interface has by validating the dark-theme classs
+// // we obtain the current theme the interface has by validating the dark-theme classs
+// const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+// const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'                                                                                          n' : 'ri sun-line'
+
+// //  we validate if the user previously chose a topic 
+// if (selectedTheme) {
+//     // if the validation is fulfilled, we ask the issue was to know if we activated or deactivated the dak 
+//     document.body.classList[selectedTheme === 'dark' ? : 'remove'](darkTheme)
+//     themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
+// }
+
+// // Activate / desactivate the theme manually with the button 
+// themeButton.addEventListener('click', () => {
+//             // add or remove the dark / icon theme 
+//             document.body.classList.toggle(darkTheme)
+//             themeButton.classList.toggle(iconTheme)
+//             // we save the theme and the current icon that the user chose 
+//             localStorage.setItem('selected-theme', getCurrentTheme())
+//             localStorage.setItem('selected-icon', getCurrentIcon())
+// })
+
+const themeButton = document.getElementById('theme-button');
+const darkTheme = 'dark-theme';
+const iconTheme = 'ri-sun-line';
+
+// Previously selected theme (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+
+// We obtain the current theme the interface has by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line';
+
+// We validate if the user previously chose a theme
+if (selectedTheme) {
+    // If the validation is fulfilled, we ask the issue was to know if we activated or deactivated the dark theme
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+    themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme);
+}
+
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+    // Add or remove the dark theme / icon theme
+    document.body.classList.toggle(darkTheme);
+    themeButton.classList.toggle(iconTheme);
+
+    // Save the theme and the current icon that the user chose
+    localStorage.setItem('selected-theme', getCurrentTheme());
+    localStorage.setItem('selected-icon', getCurrentIcon());
+});
+
+
+
+
+
+    
 
 // ==================CHANGE BACKGROUND HEADER================
 
