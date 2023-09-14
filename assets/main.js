@@ -221,10 +221,6 @@ themeButton.addEventListener('click', () => {
 
 
 
-
-
-    
-
 // ==================CHANGE BACKGROUND HEADER================
 
 // ================ SCROLL REVEAL ANIMATION ========================
