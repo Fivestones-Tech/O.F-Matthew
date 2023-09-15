@@ -51,7 +51,8 @@
         --biggest-font-size: 3rem;
         --h1-font-size: 2.25rem;
         --h2-font-size: 1.5rem;
-        --normal-font-size: 875rem;
+        --h3-font-size: 1.25rem
+        --normal-font-size: 1rem;
         --small-font-size: .875rem;
         --smaller-font-size: 813rem;
         --tiny-font-size: .688rem;
@@ -75,7 +76,7 @@ body{
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
-    transition: background .4s;  /*for dark mode animation*/
+    transition: background .4s;  /*for dark mode animation */
 } 
 
 h1,h2,h3 {
@@ -999,7 +1000,7 @@ span {
 
 /* ===================BREAKPOINTS ============ */
 /* === for small size==== */
-@media screen and (max-width) {
+@media screen and (max-width: 340px) {
     .container {
         margin-inline: 1rem;
     }
@@ -1024,7 +1025,7 @@ span {
 }
 
 /* === for medium size==== */
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 576px) {
     .nav,
     .nav__menu {
         width: 380px;
