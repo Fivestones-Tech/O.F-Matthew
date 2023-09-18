@@ -85,6 +85,18 @@ h1,h2,h3 {
     font-weight: var(--font-medium);
 }
 
+.cv{
+    color: var(--title-color);
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 10px 30px;
+    border: solid 2px var(--title-color);
+    border-radius: 3rem;
+}
+.cv:hover{
+    background: var(--gadient-color);
+}
+
 ul {
     list-style: none;
 }
@@ -242,9 +254,9 @@ body.dark-theme .contact__button{
 /* additional style  */
 
 span {
-    color: var(--first-color)
+    color: var(--first-color);
+    margin-bottom: 5px;
 }
-
 
 .nav__toggle {
     display: flex;
@@ -265,6 +277,14 @@ span {
         padding: 2rem 1.5rem 5rem;
         border-radius: 2rem;
         transition: bottom .3s;
+    }
+    .cv{
+        color: var(--title-color);
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 5px 25px;
+        border: solid 2px var(--title-color);
+        border-radius: 3rem;
     }
 }
 
@@ -325,7 +345,7 @@ span {
     text-align: center;
     font-size: var(--biggest-font-size);
     letter-spacing: .3px;
-    margin-bottom: .5rem;
+    margin-bottom: .5rem;   
 }
 
 .home__blob {
@@ -859,14 +879,14 @@ span {
     z-index: 10;
     background-color: var(--body-color);
     color: var(--title-color);
-    font-size: var(--smaller-font-size);
-    font-weight: var(--font-medium);
+    /* font-size: var(--smaller-font-size); */
+    /* font-weight: var(--font-medium); */
     padding: .35rem;
     transition: background .4s;  /*for dark mode animation*/
 }
 
 .contact__form-area {
-    height: 10rem;
+    height: 10rem; 
 }
 
 .contact__form-area textarea {
@@ -954,7 +974,7 @@ span {
 .footer__copy {
     display: block;
     margin-top: 4.5rem;
-    font-size: var(--smaller-font-size);
+    /* font-size: var(--smaller-font-size); */
     color: var(--text-color-light);
 }
 /* ====================SCROLL BAR=================== */
@@ -1201,6 +1221,7 @@ span {
     }
     .home__perfil img {
         width: 300px;
+        height: 500px;
     }
     .home__shape-wawes{
         width: 100px;
@@ -1285,5 +1306,75 @@ span {
     .projects__container .swiper-button-prev,
     .projects__container .swiper-button-next{
         font-size: 3rem;
+    }
+    .projects__container .swiper-button-prev{
+        left: -1rem;
+    }
+    .projects__container .swiper-button-next{
+        right: -1rem;
+    }
+    .projects__container .swiper-slide{
+        margin-bottom: 6.5rem;
+    }
+    .projects__img{
+        width: 320px;
+        margin-bottom: 2rem;
+    }
+    .testimonial__container{
+        width: 566px;
+    }
+    .testimonial__container .swiper-button-prev,
+    .testimonial__container .swiper-button-next{
+        font-size: 2.5rem;
+    }
+    .testimonial__container .swiper-button-prev{
+        left: calc(50% - 5rem);
+    }
+    .testimonial__container .swiper-button-next{
+        right: calc(50% - 5rem);
+    }
+    .testimonial__container .swiper-slide{
+        margin-bottom: 6rem;
+    }
+    .testimonial__description{
+        font-size: var(--h2-font-size);
+        margin-bottom: 2rem;
+    }
+    .testimonial__img{
+        width: 200px;
+        top: 13rem;
+        right: 4rem;
+    }
+
+    .contact__title{
+        margin-bottom: 3rem;
+    }
+    .contact__title i {
+        font-size: 1.25rem;
+    }
+    .contact__info{
+        row-gap: 3rem;
+    }
+    .contact__data-info{
+        font-size: var(--normal-font-size);
+    }
+    .contact__form{
+        row-gap: 2.5rem;
+    }
+    .footer__container{
+        padding: 4rem 0 3rem;
+    }
+    .footer__list{
+        column-gap: 3rem;
+        margin: 3rem 0;
+    }
+    .footer__social{
+        column-gap: 2rem;
+    }
+    .footer__social-link{
+        font-size: 1.5rem;
+    }
+    .footer__copy{
+        margin-top: 5rem;
     }
 }

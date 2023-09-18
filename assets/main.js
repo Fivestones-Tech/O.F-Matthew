@@ -230,9 +230,6 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader)
 
 
-
-
-
 // ================ SCROLL REVEAL ANIMATION ========================
 
 
