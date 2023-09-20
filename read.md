@@ -37,11 +37,17 @@ I will be including a chat section where you can chat with an A.I in the potfoli
 
 I hope to include a section where you can learn and read documentation and learn about my jorney and the other service i offe to people which part of it is to train and mentor tech enthusiast.
 
+
+
 I will be including counter to the number section using javascript.
 
-I will also use typesript for for highlight the kind of services that i render.
 
-Part of my documentation will also be about.
+
+<!-- I will also use typesript TO highlight the kind of services that i render. DONE  -->
+
+
+
+<!--PART OF MY DOCUMENTATION WILL BE ABOUT. -->
 
 Vscode extention that you need to have.
 

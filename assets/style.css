@@ -94,7 +94,8 @@ h1,h2,h3 {
     border-radius: 3rem;
 }
 .cv:hover{
-    background: var(--gadient-color);
+    color: #63B4C1;
+    border: solid 2px #63B4C1;
 }
 
 ul {
@@ -255,7 +256,7 @@ body.dark-theme .contact__button{
 
 span {
     color: var(--first-color);
-    margin-bottom: 5px;
+    color: #63B4C1;
 }
 
 .nav__toggle {
@@ -364,6 +365,7 @@ span {
     width: 170px;
     height: 260px;
     background: var(--gadient-color);
+    background: #63B4C1;
     border-radius: 5.5rem;
     overflow: hidden;
     display: flex;

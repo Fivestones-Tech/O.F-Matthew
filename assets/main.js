@@ -38,11 +38,10 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 
-
 // This is for typed script js
 const typed = new Typed('.multiple-text',{
-    strings: ['Software Engineer','Frontend Developer','Code Tutor','YouTuber','Web/U.I Designer','Tech Coach', 'Mentor','Content Creator','Multi-Entrepreneur'],
-    typeSpeed: 100,
+    strings: ['Software Frontend Engineer','Code Tutor','YouTuber','Web/U.I Designer','Tech Coach', 'Mentor','Content Creator','Multi-Entrepreneur'],
+    typeSpeed: 200,
     backSpeed: 100,
     backDelay: 1000,
     loop:true
@@ -50,6 +49,29 @@ const typed = new Typed('.multiple-text',{
 
 
 
+
+ 
+
+    // ========counter section========== 
+// const counterElement = document.getElementById('counter')
+// const counterSection = document.getElementById('counter-section')
+
+// let count = 0;
+// let isCounting = false;
+
+// const options = {
+//     root: null,
+//     rootMargin: '0px',
+//     threshold: 0.5, // Trigger when 50% of the elemnet is visible//
+// };
+
+// const observer = new IntersectionObserver(intersectionCallback, options);
+//                 observer.observe(counterSection);
+
+// function incrementCounter() {
+//     count++;
+//     conterElement.textCounter = count;
+// }
 
 
 
@@ -239,10 +261,10 @@ const sr = ScrollReveal({
     //    reset: true  ANIMATION repeat
 })
 
-sr.reveal('.home__data, .projects__container, testimonial__container')
+sr.reveal('.home__data, .projects__container, testimonial__container, .footer__container')
 sr.reveal('.home__info div', {delay: 600, origin: 'bottom', interval: 100})
-sr.reveal('.skills__content:nth-child(1)', {origin: 'left'})
-sr.reveal('.skills__content:nth-child(2)', {origin: 'right'})
+sr.reveal('.skills__content:nth-child(1), .contact__content:nth-child(1)', {origin: 'left'})
+sr.reveal('.skills__content:nth-child(2), .contact__content:nth-child(2)', {origin: 'right'})
 sr.reveal('.qualification__content, .services__card', {interval: 100})
 
 
