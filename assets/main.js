@@ -73,6 +73,32 @@ const typed = new Typed('.multiple-text',{
 //     conterElement.textCounter = count;
 // }
 
+const contAnimation = () => {
+    const clientsAnimation = document.getElementById('clients')
+    const projectsAnimation = document.getElementById('projects')
+
+
+    const obj = {
+        cl : [0, 3],
+
+        pr : [0, 20],
+
+    }
+
+
+    setInterval() => {
+
+        obj.cl[0] = obj.cl[0] < obj.ex[1] ? obj.cl[0] + 1 : obj.cl[1];
+
+        obj.pr[0] = obj.pr[0] < obj.pr[1] ? obj.pr[0] + 1 : obj.pr[1];
+    
+   
+        
+    }
+
+
+}
+
 
 
 

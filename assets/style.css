@@ -94,8 +94,9 @@ h1,h2,h3 {
     border-radius: 3rem;
 }
 .cv:hover{
-    color: #63B4C1;
-    border: solid 2px #63B4C1;
+    color: #ffffff;
+    border: solid 2px #ffffff;
+    background-color: #1877F2;
 }
 
 ul {
@@ -189,6 +190,12 @@ body.dark-theme .contact__button{
     gap: 1.5rem;
 }
 
+i,
+.ri-moon-line {
+    color: #1877F2;
+}
+
+
 .section {
     padding-block: 2.5rem;
 }
@@ -256,7 +263,8 @@ body.dark-theme .contact__button{
 
 span {
     color: var(--first-color);
-    color: #63B4C1;
+    color: #1877F2;
+
 }
 
 .nav__toggle {
@@ -354,7 +362,7 @@ span {
     width: 200px;
     height: 290px;
     background-color: var(--body-color);
-    border: 2px solid var(--text-color-light);
+    border: 2px solid #1877F2;
     justify-self: center;
     border-radius: 6.25rem;
     place-items: center;
@@ -366,6 +374,9 @@ span {
     height: 260px;
     background: var(--gadient-color);
     background: #63B4C1;
+    background: #d3d3d3;
+    background: #1877F2;
+    /* background: #0072b1; */
     border-radius: 5.5rem;
     overflow: hidden;
     display: flex;
@@ -614,7 +625,7 @@ span {
 .services__border {
     width: 248px;
     height: 342px;
-    border: 1.8px solid var(--text-color-light);
+    border: 1.8px solid #1877F2;
     border-radius: 7.75rem;
     position: absolute;
     inset: 0;
@@ -625,7 +636,9 @@ span {
     opacity: 0;
 }
 
+
 .services__card:hover i {
+    color: #1877F2;
     transform: rotateY(360deg);
 }
 

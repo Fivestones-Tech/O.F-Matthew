@@ -37,6 +37,8 @@ I will be including a chat section where you can chat with an A.I in the potfoli
 
 I hope to include a section where you can learn and read documentation and learn about my jorney and the other service i offe to people which part of it is to train and mentor tech enthusiast.
 
+    <!-- IMPORTANT IMPORTANT -->
+adding transition to the download cv
 
 
 I will be including counter to the number section using javascript.
