@@ -286,6 +286,10 @@ span {
         padding: 2rem 1.5rem 5rem;
         border-radius: 2rem;
         transition: bottom .3s;
+        border: 1px solid #1877F2;
+    }
+    nav {
+        border: 1px solid #1877F2;
     }
     .cv{
         color: var(--title-color);
@@ -1150,6 +1154,13 @@ span {
         column-gap: 3rem;
         margin-inline: 1.5rem;
         padding: 0;
+        transition: 0.04s;
+    }
+    .nav__item {
+        transition: 0.04s;
+    }
+    .nav__item:hover{
+        border-bottom: 2px solid #1877F2;
     }
     .nav__Link i,
     .nav__toggle,
@@ -1217,6 +1228,7 @@ span {
     .section__border {
         padding-bottom: 6rem;
     }
+    
     .section__subtitle{
         margin-bottom: 5rem;
     }

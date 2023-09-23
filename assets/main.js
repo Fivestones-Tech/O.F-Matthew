@@ -53,52 +53,29 @@ const typed = new Typed('.multiple-text',{
  
 
     // ========counter section========== 
-// const counterElement = document.getElementById('counter')
-// const counterSection = document.getElementById('counter-section')
-
-// let count = 0;
-// let isCounting = false;
-
-// const options = {
-//     root: null,
-//     rootMargin: '0px',
-//     threshold: 0.5, // Trigger when 50% of the elemnet is visible//
-// };
-
-// const observer = new IntersectionObserver(intersectionCallback, options);
-//                 observer.observe(counterSection);
-
-// function incrementCounter() {
-//     count++;
-//     conterElement.textCounter = count;
-// }
-
-const contAnimation = () => {
-    const clientsAnimation = document.getElementById('clients')
-    const projectsAnimation = document.getElementById('projects')
-
-
-    const obj = {
-        cl : [0, 3],
-
-        pr : [0, 20],
-
-    }
-
-
-    setInterval() => {
-
-        obj.cl[0] = obj.cl[0] < obj.ex[1] ? obj.cl[0] + 1 : obj.cl[1];
-
-        obj.pr[0] = obj.pr[0] < obj.pr[1] ? obj.pr[0] + 1 : obj.pr[1];
+    const countAnimation = () => {
+        const clientsAnimation = document.getElementById('clients');
+        const projectsAnimation = document.getElementById('projects');
     
-   
-        
-    }
-
-
-}
-
+        const obj = {
+            cl: [0, 3],
+            pr: [0, 20],
+        };
+    
+        const projectsElement = document.getElementById('projects'); // Define the projects element
+        const clientsElement = document.getElementById('clients');   // Define the clients element
+    
+        setInterval(() => {
+            obj.cl[0] = obj.cl[0] < obj.cl[1] ? obj.cl[0] + 1 : obj.cl[1];
+            obj.pr[0] = obj.pr[0] < obj.pr[1] ? obj.pr[0] + 1 : obj.pr[1];
+    
+            projectsElement.textContent = `${obj.pr[0]} +`; // Use backticks for template literals
+            clientsElement.textContent = `${obj.cl[0]} +`;   // Use backticks for template literals
+        }, 10);
+    };
+    
+    window.addEventListener('load', countAnimation);
+    
 
 
 
