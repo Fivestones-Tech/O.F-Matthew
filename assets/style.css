@@ -881,7 +881,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 2px solid var(--text-color-light);
+    border: 2px solid #1877F2;
     border-radius: 2rem;
     padding: 1.5rem;
     font-size: var(--normal-font-size);
