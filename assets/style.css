@@ -92,6 +92,7 @@ h1,h2,h3 {
     padding: 10px 30px;
     border: solid 2px var(--title-color);
     border-radius: 3rem;
+    transition: 0.40s;
 }
 .cv:hover{
     color: #ffffff;
