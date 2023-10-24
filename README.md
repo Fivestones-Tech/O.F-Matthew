@@ -10,5 +10,8 @@ Open a folder
 Open html file
 Open CSS file
 Open js file
+Structure your HTML code
+Add CSS styling to style your HTML code
+
 
 
