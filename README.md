@@ -6,4 +6,9 @@ Detail of the project.
 Being in the coding mood
 Setting up work environment ♻️ 
 Vscode editor
-Open a folder 
+Open a folder
+Open html file
+Open CSS file
+Open js file
+
+
