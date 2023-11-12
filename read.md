@@ -11,20 +11,22 @@ i will be working on the testimonial
 
 i will be adding images on the testimonial
 
-i will be adding whatsapp chat in this portfolio
+i will be adding WhatsApp chat in this portfolio
 
 i will be changing the theme of the portfolio
 
 
 
-i will be converting it to react.js later on
+I will be converting it to React. later on
 
 
 <!-- I will be adding where my CV can be downloaded on the home page and the nav_link. done -->
 
+I will need to pull this repo to add more features to it tomorrow, sunday
+
 <!-- Changing the color to my brand color. done -->
 
-i will be creating a blog post section by opening another html file and many more. or redirect to medium blogger
+I will be creating a blog post section by opening another HTML file and many more. or redirect to medium blogger
 
 I will be adding whatsapp chat to the portfolio.
 
