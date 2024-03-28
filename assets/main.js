@@ -59,7 +59,7 @@ const typed = new Typed('.multiple-text',{
     
         const obj = {
             cl: [0, 3],
-            pr: [0, 20],
+            pr: [0, 25],
         };
     
         const projectsElement = document.getElementById('projects'); // Define the projects element
