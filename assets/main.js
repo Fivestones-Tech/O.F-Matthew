@@ -58,7 +58,7 @@ const typed = new Typed('.multiple-text',{
         const projectsAnimation = document.getElementById('projects');
     
         const obj = {
-            cl: [0, 3],
+            cl: [0, 4],
             pr: [0, 25],
         };
     
